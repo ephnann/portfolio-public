@@ -1,0 +1,169 @@
+:root {
+    font-family: 'Open-Sans', 'Generic-Sans', 'Roboto', sans-serif;
+}
+
+/* FONT SIZES | Default */
+
+:root {
+    --fs-1: 1rem;
+    --fs-2: calc(var(--fs-1) * var(--scalar-1));
+    --fs-3: calc(var(--fs-2) * var(--scalar-1));
+    --fs-4: calc(var(--fs-3) * var(--scalar-1));
+    --fs-5: calc(var(--fs-4) * var(--scalar-1));
+    --fs-6: calc(var(--fs-5) * var(--scalar-1));
+}
+
+
+/* FONT SIZES | Responsive */
+
+@media screen and (max-width: 360px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--scalar-01));
+        --fs-3: calc(var(--fs-2) * var(--scalar-01));
+        --fs-4: calc(var(--fs-3) * var(--scalar-01));
+        --fs-5: calc(var(--fs-4) * var(--scalar-01));
+        --fs-6: calc(var(--fs-5) * var(--scalar-01));
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 864px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--scalar-1));
+        --fs-3: calc(var(--fs-2) * var(--scalar-1));
+        --fs-4: calc(var(--fs-3) * var(--scalar-1));
+        --fs-5: calc(var(--fs-4) * var(--scalar-1));
+        --fs-6: calc(var(--fs-5) * var(--scalar-1));
+    }
+}
+
+@media screen and (min-width: 361px) and (max-width: 864px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--scalar-1));
+        --fs-3: calc(var(--fs-2) * var(--scalar-1));
+        --fs-4: calc(var(--fs-3) * var(--scalar-1));
+        --fs-5: calc(var(--fs-4) * var(--scalar-1));
+        --fs-6: calc(var(--fs-5) * var(--scalar-1));
+    }
+}
+
+@media screen and (min-width: 865px) and (max-width: 1366px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--scalar-2));
+        --fs-3: calc(var(--fs-2) * var(--scalar-2));
+        --fs-4: calc(var(--fs-3) * var(--scalar-2));
+        --fs-5: calc(var(--fs-4) * var(--scalar-2));
+        --fs-6: calc(var(--fs-5) * var(--scalar-2));
+    }
+}
+
+@media screen and (min-width: 1361px) {
+     :root {
+        --fs-1: 1rem;
+        --fs-2: calc(var(--fs-1) * var(--scalar-3));
+        --fs-3: calc(var(--fs-2) * var(--scalar-3));
+        --fs-4: calc(var(--fs-3) * var(--scalar-3));
+        --fs-5: calc(var(--fs-4) * var(--scalar-3));
+        --fs-6: calc(var(--fs-5) * var(--scalar-3));
+    }
+}
+
+/* TYPOGRAPHY ASSIGNMENTS */
+
+/* FONT SIZE FACTORS */
+:root {
+    /* Use factors to universally scale all display and/or body font dimensions, or independently scale any specific tag */
+    --factor-type-display: 1;
+    --factor-type-body: 1;
+    --factor-type-line-height: 1;
+    --factor-type-line-height-display: 1;
+    --factor-type-line-height-body: 1;
+    --factor-type-h1: 1;
+    --factor-type-h2: 1;
+    --factor-type-h3: 1;
+    --factor-type-h4: 1;
+    --factor-type-h5: 1;
+    --factor-type-h6: 1;
+}
+
+/* MASTER VARIABLES */
+:root {
+    --master-h1-size: calc(var(--fs-6) * var(--factor-type-display) * var(--factor-type-h1));
+    --master-h1-line-height: calc(var(--fs-6) * var(--factor-type-display) * var(--factor-type-h1) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h2-size: calc(var(--fs-5) * var(--factor-type-display) * var(--factor-type-h2));
+    --master-h2-line-height: calc(var(--fs-5) * var(--factor-type-display) * var(--factor-type-h2) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display)); 
+    --master-h3-size: calc(var(--fs-4) * var(--factor-type-display) * var(--factor-type-h3));
+    --master-h3-line-height: calc(var(--fs-5) * var(--factor-type-display) * var(--factor-type-h3) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h4-size: calc(var(--fs-3) * var(--factor-type-display) * var(--factor-type-h4));
+    --master-h4-line-height: calc(var(--fs-4) * var(--factor-type-display) * var(--factor-type-h4) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h5-size: calc(var(--fs-2) * var(--factor-type-display) * var(--factor-type-h5));
+    --master-h5-line-height: calc(var(--fs-3) * var(--factor-type-display) * var(--factor-type-h5) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-h6-size: calc(var(--fs-1) * var(--factor-type-display) * var(--factor-type-h6));
+    --master-h6-line-height: calc(var(--fs-2) * var(--factor-type-display) * var(--factor-type-h6) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
+    --master-body-1-size: calc(var(--fs-2) * 0.8 * var(--factor-type-body));
+    --master-body-1-line-height: calc(var(--fs-3) * 0.88 * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));
+    --master-body-2-size: calc(var(--fs-1) * 0.8 * var(--factor-type-body));
+}
+
+/*  */
+
+h1 {
+    font-size: var(--master-h1-size);
+    line-height: var(--master-h1-line-height);
+}
+
+h2 {
+    font-size: var(--master-h2-size);
+    line-height: var(--master-h2-line-height);
+}
+
+h3 {
+    font-size: var(--master-h3-size);
+    line-height: var(--master-h3-line-height);
+}
+
+h4 {
+    font-size: var(--master-h4-size);
+    line-height: var(--master-h4-line-height);
+    margin: 0;
+}
+
+h5 {
+    font-size: var(--master-h5-size);
+    line-height: var(--master-h5-line-height);
+    margin: 0;
+}
+
+h6 {
+    font-size: var(--master-h6-size);
+    line-height: var(--master-h6-line-height);
+}
+
+/* body 1 size and line-height uses unique relative factors for heuristic adjustment of all body text. This ensures body 1 instances will always be greater than 1rem */
+/* ...body 1 acts as default font for paragraph text and button labels */
+
+p,
+.body-1,
+button,
+label,
+a {
+    font-size: var(--master-body-2-size);
+    line-height: var(--master-body-2-line-height);
+    font-weight: 100;
+}
+
+.body-2 {
+    font-size: calc(var(--fs-1) * 0.8 * var(--factor-type-body));
+    line-height: calc(var(--fs-2) * 0.88 * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));
+}
+
+caption,
+figcaption,
+label,
+legend {
+    font-size: calc(var(--fs-2) * 0.8 * var(--factor-type-body));
+    line-height: calc(var(--fs-2) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));;
+}

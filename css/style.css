@@ -1,0 +1,35 @@
+@import url("/css/typography.css");
+@import url("/css/space.css");
+@import url("/css/columns.css");
+@import url("/css/elevation.css");
+
+html {
+    margin: var(--sp-2);
+}
+
+
+
+a {
+    text-decoration: inherit;
+    color: inherit;
+    padding: var(--sp-2);
+}
+
+nav ul {
+    list-style: none;
+}
+.card {
+    padding: var(--sp-4);
+}
+.centre {
+    justify-content: center;
+    align-items: center;
+}
+#card-image-1 {
+    background-image: url("/images/card-image-1.png");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: contain;
+    min-height: 200px;
+    height: 30vh;
+}
