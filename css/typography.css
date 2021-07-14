@@ -103,7 +103,7 @@
     --master-h5-line-height: calc(var(--fs-3) * var(--factor-type-display) * var(--factor-type-h5) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
     --master-h6-size: calc(var(--fs-1) * var(--factor-type-display) * var(--factor-type-h6));
     --master-h6-line-height: calc(var(--fs-2) * var(--factor-type-display) * var(--factor-type-h6) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-display));
-    --master-body-1-size: calc(var(--fs-2) * 0.8 * var(--factor-type-body));
+    --master-body-1-size: calc(var(--fs-1) * var(--factor-type-body));
     --master-body-1-line-height: calc(var(--fs-3) * 0.88 * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));
     --master-body-2-size: calc(var(--fs-1) * 0.8 * var(--factor-type-body));
 }
@@ -134,7 +134,7 @@ h4 {
 h5 {
     font-size: var(--master-h5-size);
     line-height: var(--master-h5-line-height);
-    margin: 0;
+    margin-bottom: 0;
 }
 
 h6 {
@@ -150,8 +150,8 @@ p,
 button,
 label,
 a {
-    font-size: var(--master-body-2-size);
-    line-height: var(--master-body-2-line-height);
+    font-size: var(--master-body-1-size);
+    line-height: var(--master-body-1-line-height);
     font-weight: 100;
 }
 
@@ -166,4 +166,9 @@ label,
 legend {
     font-size: calc(var(--fs-2) * 0.8 * var(--factor-type-body));
     line-height: calc(var(--fs-2) * var(--factor-type-line-height) * var(--factor-type-line-height) * var(--factor-type-line-height-body));;
+}
+
+.display-font {
+    font-family: 'Dancing Script', 'Open Sans', 'Roboto', 'Generic Sans', sans-serif;
+    font-size: 3rem;
 }

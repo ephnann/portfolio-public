@@ -1,0 +1,70 @@
+:root {
+    --primary: #253758;
+    --p-light: #f4f5f7;
+    --extra-light: #dce1e9;
+    --text: #253758;
+    --text-variant: #42526e;
+    --accent: #0052cc;
+    --accent-dark: #0045ac;
+    --background: #ffffff;
+}
+
+body {
+    color: var(--text);
+    background-color: var(--background);
+}
+
+
+/* APPLICATIONS */
+
+.clr-primary {
+    color: var(--primary);
+}
+
+.clr-p-light {
+    color: var(--p-light);
+}
+
+.clr-accent {
+    color: var(--accent);
+}
+.clr-accent-d {
+    color: var(--accent-dark);
+}
+
+.clr-ex-l {
+    color: var(--extra-light);
+}
+
+.clr-text {
+    color: var(--text);
+}
+
+.clr-text-var {
+    color: var(--text-variant);
+}
+
+.clr-background {
+    color: var(--background);
+}
+
+.fill-primary {
+    background-color: var(--primary);
+}
+
+.fill-p-light {
+    background-color: var(--p-light);
+}
+
+
+.fill-accent {
+    background-color: var(--accent);
+}
+
+.fill-text {
+    background-color: var(--text);
+}
+
+.fill-background {
+    background-color: var(--background);
+}

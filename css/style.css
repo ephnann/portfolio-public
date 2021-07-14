@@ -2,12 +2,14 @@
 @import url("../css/space.css");
 @import url("../css/columns.css");
 @import url("../css/elevation.css");
+@import url("../css/color.css");
+@import url("../css/motion.css");
+
 
 html {
     margin: var(--sp-2);
+    max-width: 1600px;
 }
-
-
 
 a {
     text-decoration: inherit;
@@ -15,21 +17,111 @@ a {
     padding: var(--sp-2);
 }
 
-nav ul {
-    list-style: none;
+button {
+    text-decoration: none;
+    color: var(--background);
+    border: none;
+    border-radius: 0.2rem;
+    background-color: var(--accent);
+    padding: 0.2rem 1rem;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 500;
+    cursor: pointer;
 }
 .card {
     padding: var(--sp-4);
+    /* transition: all var(--tm-2) ease; */
+    margin: 0 0 2rem 0;
+}
+.card:hover {
+    box-shadow: var(--ev-4);
+    transform: scale(1.01);
 }
 .centre {
     justify-content: center;
     align-items: center;
 }
 #card-image-1 {
-    background-image: url("../images/card-image-1.png");
+    background-image: url("../images/card-image-1.svg");
     background-position: top;
     background-repeat: no-repeat;
     background-size: contain;
-    min-height: 200px;
-    height: 30vh;
+    min-height: 150px;
+}
+#logo-mobile {
+    display: none;
+}
+.nav-items-mobile {
+    display: none;
+}
+/* 
+.menu-btn {
+    position: relative;
+    display: none;
+    justify-content: flex-end;
+    align-items: center;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+    transition: all var(--tm-2) ease;
+}
+.menu-btn-burger {
+    width: 32px;
+    height: 4px;
+    background: var(--text);
+    transition: all var(--tm-2) ease;
+}
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+    content: '';
+    position: absolute;
+    width: 32px;
+    height: 4px;
+    background: var(--text);
+    transition: all var(--tm-2) ease;
+}
+.menu-btn-burger::before {
+    transform: translateY(-8px);
+}
+.menu-btn-burger::after {
+    transform: translateY(8px);
+}
+/* Animation */
+/* .menu-btn.open .menu-btn-burger {
+    background: transparent;
+}
+.menu-btn.open .menu-btn-burger::before {
+    transform: rotate(45deg);
+}
+.menu-btn.open .menu-btn-burger::after {
+    transform: rotate(-45deg); 
+}
+.menu-btn.open .nav-items-mobile {
+    display: block;
+} */
+
+ 
+
+#tag-line-mobile {
+    display: none;
+}
+
+/* Responsive layout */
+@media screen and (max-width: 714px) {
+    #tag-line {
+        display: none;
+    }
+    #tag-line-mobile {
+        display: block;
+    }
+    #nav-items {
+        display: none;
+    }
+    #resume-button {
+        display: none;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
 }
