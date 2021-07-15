@@ -163,3 +163,9 @@
     grid-column: 3 / span 8;
     width: 80%;
 }
+#wire-caption {
+    position: relative;
+    top: -32px;
+    grid-row: 5;
+    grid-column: 4 / span 8;
+}
