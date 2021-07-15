@@ -16,7 +16,18 @@ a {
     color: inherit;
     padding: var(--sp-2);
 }
-
+.body-full-w {
+    grid-column: 3 / span 8;
+}
+.body-half-w {
+    grid-column: 3 / span 4;
+}
+.body-half-w-r {
+    grid-column: 7 / span 4;
+}
+.body-indent {
+    grid-column: 4 / span 7;
+}
 button {
     text-decoration: none;
     color: var(--background);
@@ -30,16 +41,11 @@ button {
 }
 .card {
     padding: var(--sp-4);
-    /* transition: all var(--tm-2) ease; */
     margin: 0 0 2rem 0;
 }
 .card:hover {
     box-shadow: var(--ev-4);
     transform: scale(1.01);
-}
-.centre {
-    justify-content: center;
-    align-items: center;
 }
 #card-image-1 {
     background-image: url("../images/card-image-1.svg");
@@ -48,59 +54,28 @@ button {
     background-size: contain;
     min-height: 150px;
 }
-#logo-mobile {
-    display: none;
+.margin-bottom-1 {
+    margin-bottom: var(--sp-4);
 }
-.nav-items-mobile {
-    display: none;
+.nav-wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 10rem;
 }
-/* 
-.menu-btn {
-    position: relative;
-    display: none;
-    justify-content: flex-end;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    cursor: pointer;
-    transition: all var(--tm-2) ease;
+.nav-item {
+    margin: 1rem;
 }
-.menu-btn-burger {
-    width: 32px;
-    height: 4px;
-    background: var(--text);
-    transition: all var(--tm-2) ease;
+.no-margins {
+    margin: 0;
 }
-.menu-btn-burger::before,
-.menu-btn-burger::after {
-    content: '';
-    position: absolute;
-    width: 32px;
-    height: 4px;
-    background: var(--text);
-    transition: all var(--tm-2) ease;
-}
-.menu-btn-burger::before {
-    transform: translateY(-8px);
-}
-.menu-btn-burger::after {
-    transform: translateY(8px);
-}
-/* Animation */
-/* .menu-btn.open .menu-btn-burger {
-    background: transparent;
-}
-.menu-btn.open .menu-btn-burger::before {
-    transform: rotate(45deg);
-}
-.menu-btn.open .menu-btn-burger::after {
-    transform: rotate(-45deg); 
-}
-.menu-btn.open .nav-items-mobile {
-    display: block;
-} */
+.section-head {
+     grid-column: 3 /span 6;
+ }
 
- 
+
+strong {
+     font-weight: 400;
+ }
 
 #tag-line-mobile {
     display: none;

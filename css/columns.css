@@ -16,13 +16,6 @@
     grid-gap: var(--sp-2);
 }
 
-#logo {
-    grid-column: 2 / span 2;
-}
-#nav-items {
-    grid-column: 8 / span 2;
-}
-
 #tag-line {
     grid-column: 2 / span 6;
 }

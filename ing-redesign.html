@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ING Redesign Case Study</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap" rel="stylesheet">    
+
+    <!-- Style -->
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link href="css/ing.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+    <section>
+        <nav class="nav-wrapper">
+            <p id="logo">EPHRAIM NANN</p>
+            <div>
+                <a class="nav-item" href="#">Work</a>
+                <a class="nav-item" href="#">About</a>
+                <button class="nav-item" id="resume-button" type="button" onclick="window.open('https://ephnann.github.io/resume/')">Resume</button>
+            </div>
+        </nav>
+        <div>
+            <h5 id="page-title">Helping young adults track and grow their savings with ING Bank</h5>
+            <p id="date">14 July 2021</p>
+        </div>
+        <img src="images/case-study-hero-1.png" alt="final redesign mockups" id="hero-img">
+    </section>
+    <section>
+        <div class="gr-12">
+            <h5 class="section-head">Project Overview</h5>
+            <h6 id="skills">Skills</h6>
+            <p id="skills-list">User research <br>Ideation and wireframing <br>Prototyping <br>Usability Testing</p>
+            <h6 id="team">Team</h6>
+            <p id="team-members">Personal project</p>
+            <h6 id="timeframe">Timeframe</h6>
+            <p id="timeframe-length">10 days</p>
+        </div>
+        <div class="gr-12">
+            <h5 id="objective">Objective</h5>
+            <p id ="objective-statement">
+                The goal of this project was to imrove the customer experience of the ING website. 
+                <br><br>Overall, <strong>the final redesigned helped 100% of users identify areas where they can improve their spending* </strong>. The general impression of most customers was that <strong>the new website was highly intuitive and informative*. </strong> 
+                <br><br>*= 5 usability tests.
+            </p>
+            <div id="old-dash-img"></div>
+            <p class="body-2" id="before-img-caption">The old ING dashboard. Sensitive information has been concealed.</p>
+        </div>
+    </section>
+    <section>
+        <div class="gr-12">
+            <h5 class="section-head">User research</h5>
+            <p class="body-full-w">As a user researcher, I wanted to understand how the experience of tracking and growing your savings with ING could be improved. I used qualitative and quantitative methodologies to answer the following research questions:</p>
+            <p class="body-indent">1. How do users think and feel about managing their savings and expenses?
+                <br>2. What methods, if any, do users use to track their savings?
+                <br>3. How empowered do users feel to grow their savings?</p>
+            <h5 class="section-head">Surveys</h5>
+            <p class="body-half-w">I conducted a survey with 63 responses. The most important findings were that <strong>37.8% of young adults struggle to track and grow their savings</strong> and that overall <strong>73% of people try to  track their savings and budget</strong>. 
+                <br><br>Furthermore, the main national Australian competitors for ING are Commonwealth Bank and ANZ.</p>
+            <div id="iframe-container">
+                <iframe width="600" height="371" seamless frameborder="0" scrolling="no" src="https://docs.google.com/spreadsheets/d/e/2PACX-1vSJbiDi_ObMyIuaYxCYcVVhekaBj6EgExqH_2T8iGQXYeDUT2mBENF6zZ8CZ9IHYuuR4l36IZUcvrb8/pubchart?oid=1292248357&amp;format=interactive"></iframe>
+            </div>
+            <!-- <div id="survey-graph"></div> -->
+            <h5 class="section-head">User interviews</h5>
+            <p class="body-full-w no-margins">I conducted 5 user interviews with 2 ING customers and 3 others.</p>
+            <p class="body-indent no-margins"><em>Sample questions:</em></p>
+            <ul class="body-indent no-margins">
+                <li>Walk me through how you manage your spending… Does this work for you? Why?</li>
+                <li>Tell me about your financial ambitions...Are you successful? Why…</li>
+                <li>Do you feel prepared for rainy days? Why?</li>
+            </ul>
+            <h5 class="section-head">Interview insights</h5>
+            <div class="body-half-w" id="interview-img"></div>
+            <p class="body-half-w-r">1. Other than high interest rates and low fees, I want a bank with an intuitive and friendly interface.<br>
+            <em>"[UP] is one of those apps where the user interface is so good that I'd just go for that and sacrifice the interest" - Callum</em><br><br>
+            2. I sometimes get frustrated how spending a little bit here and there adds up so quickly.<br>
+            <em>
+                "Where did all that money go?" - Georgia <br>
+                "It's only a few dollars." - Cass <br>
+                "I spent money when I thought I had enough, but probably didn't" - Josh
+            </em><br><br>
+            3. I want financial freedom but don't want to think about how I spend my money too much.<br>
+            <em>“I want a stable future but don’t want to miss out on having fun either - Callum</em>
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="gr-12">
+            <h5 class="section-head margin-bottom-1">Persona creation</h5>
+            <div id="persona-profile"></div>
+            <h4 id="persona-name">Amy Anderson</h4>
+            <p id="persona-demog">20 Years old<br>
+                Melbourne AU<br>
+                University Student</p> 
+            <h6 id="persona-quote"><em>"I thought it was only a few dollars here and there. But then I saw my statement at the end of the month."</em></h6> 
+            <h6 id="behaviour-demo-header">Behavioural demographics</h6>
+            <ul id="demographics">
+                <li>Keeps a budget on a spreadsheet when she has time for it.</li>
+                <li>Occasionally impulse buys but tries not to</li>
+                <li>Goes through her statement by hand</li>
+                <li>ries to grow her savings but has a hard time of it</li>
+            </ul>
+            <h6 id="goals">Goals</h6>
+            <ul id="goals-list">
+                <li>Financial freedom</li>
+                <li>Does not want to think much about how she spends her money</li>            
+                <li>Wants to grow her savings and have a safety-net for rainy days</li>
+                <li>Does not want to miss out on having fun with friends.</li>
+            </ul>
+            <h6 id="frustrations">Frustrations</h6>
+            <ul id="frustrations-list">
+                <li>Small purchases add up quickly.</li>
+                <li>Thinking she has more money to spend than she can afford.</li>            
+                <li>Takes a long time going through statements to create a budget.</li>
+                <li>Turns to competitors that have a friendlier interface.</li>
+            </ul>
+  
+        </div>
+    </section>
+    <section>
+        <div class="gr-12">
+            <h5 class="section-head">Competitor Analysis</h5>
+            <p class="body-full-w">The competitor analysis was based on survey data and interview results. The survey showed that the main competitors for ING in Australia are ANZ and Commonwealth Bank. One of the interviewees stated that he preferred UP Bank to ING because of the friendly user interface.</p>
+        <div class="card ev-2" id="card-1">
+            <img src="images/commbank-logo.png" alt="commbank logo" id="commbank-logo">
+            <h6 id="comm-title">Commonwealth Bank</h6>
+            <p class="clr-confirm"><strong>Pro's</strong></p>
+            <p>+ Schedule payments and bills <br>
+                + One of the "big four" (trustworthy) <br>
+                + Goals and savings <br>
+                + Saving plans <br>
+                + Monthly income/spending summary <br>
+                + Minimalist UX UI</p>
+            <p class="clr-error"><strong>Con's</strong></p>
+            <p>
+                - Low interest rate <br>
+                - Account fees <br>
+                - Uninformative statements
+            </p>
+        </div>
+        <div class="card ev-2" id="card-2">
+            <img src="images/anz-logo.png" alt="commbank logo" id="commbank-logo">
+            <h6 id="comm-title">ANZ</h6>
+            <p class="clr-confirm"><strong>Pro's</strong></p>
+            <p>+ Automatic payments <br>
+                + One of the "big four" (trustworthy) <br>
+                + Deposit/withdrawal summaries (confusing).</p>
+            <p class="clr-error"><strong>Con's</strong></p>
+            <p>
+                - Low interest rate <br>
+                - Account fees <br>
+                - Uninformative statements
+            </p>
+        </div>
+        <div class="card ev-2" id="card-3">
+            <img src="images/up-logo.png" alt="commbank logo" id="commbank-logo">
+            <h6 id="comm-title">ANZ</h6>
+            <p class="clr-confirm"><strong>Pro's</strong></p>
+            <p>+ Saving goals (savers) <br>
+                + Round up spare change to go into savers <br>
+                + Divvy payments up into saving goals <br>
+                + Monthly spending summaries <br>
+                + Informative transaction statements</p>
+            <p class="clr-error"><strong>Con's</strong></p>
+            <p>
+                - Too many features (scope creep) <br>
+                - Online bank (less trustworthy) <br>
+                - Mobile only <br>
+                - Low interest rates
+            </p>
+        </div>
+
+        </div>
+    </section>
+    <section>
+        <div class="gr-12">
+            <h5 class="section-head">The problem</h5>
+            <p class="body-full-w">Young adults try to budget but often struggle to manage and grow their savings effectively. While they try to stay on top of their spending, they do not want to miss out on having fun. They do not want to think very much about how they spend their money but hope to gain financial freedom one day.
+            <br><br>How might we help users like Amy gain financial freedom while maintaining a healthy work life balance? What if ING Bank helped their customers create a budget and track their savings?</p>
+            <img src="images/wireframe-sketches.jpg" alt="Wireframe sketches" id="wireframes">
+        </div>
+    </section>
+</body>
+</html>

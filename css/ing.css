@@ -1,0 +1,165 @@
+#behaviour-demo-header {
+    grid-column: 3 / span 2;
+    margin: var(--sp-4) 0 0 0;
+}
+#before-img-caption {
+    grid-row: 3;
+    grid-column: 7 / span 4;
+    position: relative;
+    top: -48px;
+}
+#card-1 {
+    grid-row: 3;
+    grid-column: 3 / span 3;
+}
+#card-2 {
+   grid-row: 3;
+   grid-column: 6 / span 3;   
+}
+#card-3 {
+   grid-row: 3;
+   grid-column: 9 / span 3;   
+}
+#commbank-logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+#comm-title {
+    display: flex;
+    justify-content: center;
+}
+
+#date {
+    display: flex;
+    justify-content: center;
+}
+#demographics {
+    grid-column: 3 / span 2;
+    grid-row: 6;
+    margin: 0 0 var(--sp-4);
+}
+#frustrations {
+    grid-column: 9 / span 2;
+    margin: var(--sp-4) 0 0 0;   
+}
+#frustrations-list {
+    grid-column: 9 / span 2;
+    grid-row: 6;
+    margin: 0 0 var(--sp-4);
+}
+#goals {
+    grid-column: 6 / span 2;
+    margin: var(--sp-4) 0 0 0;
+}
+#goals-list {
+    grid-column: 6 / span 2;
+    grid-row: 6;
+    margin: 0 0 var(--sp-4);
+}
+#hero-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;
+    margin-bottom: var(--sp-4);
+}
+#iframe-container {
+    grid-column: 7 / span 4;
+}
+#interview-img {
+    background-image: url("../images/interview.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 300px;
+    max-height: 400px;
+    margin: var(--sp-8) var(--sp-4) var(--sp-8) 0;
+
+}
+#objective {
+    grid-column: 3 / span 4;
+}
+#objective-statement {
+    grid-row: 2;
+    grid-column: 3 / span 4;
+}
+#old-dash-img {
+    background-image: url("../images/dashboard-old.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 7 / span 4;
+    grid-row: 2;
+}
+#page-title {
+    display: flex;
+    justify-content: center;
+}
+#persona-profile {
+    background-image: url("../images/persona-profile.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-row: 2 / span 3;
+    grid-column: 3 / span 3;
+    min-height: 300px;
+    max-height: 500px;
+}
+#persona-name {
+    grid-column: 7 / span 3;
+    grid-row: 2;
+}
+#persona-demog {
+    grid-column: 7 / span 3;
+    grid-row: 3;   
+}
+#persona-quote {
+    grid-column: 7 / span 3;
+    grid-row: 4;   
+  
+}
+#skills {
+    grid-column: 3 / span 2;
+    margin: var(--sp-4) 0 0 0;
+}
+#skills-list {
+    grid-column: 3 / span 2;
+    grid-row: 3;
+    margin: 0 0 var(--sp-4);
+}
+#survey-graph {
+    background-image: url("/images/survey-graph-1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    grid-column: 7 / span 4;
+    /* grid-row: 2; */
+}
+#team {
+    grid-column: 6 / span 2;
+    margin: var(--sp-4) 0 0 0;
+}
+#team-members {
+    grid-column: 6 / span 2;
+    grid-row: 3;
+    margin: 0 0 var(--sp-4);
+}
+#timeframe {
+    grid-column: 9 / span 2;
+    margin: var(--sp-4) 0 0 0;
+}
+#timeframe-length {
+    grid-column: 9 / span 2;
+    grid-row: 3;
+    margin: 0 0 var(--sp-4);
+}
+#wireframes {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    grid-row: 3;
+    grid-column: 3 / span 8;
+    width: 80%;
+}

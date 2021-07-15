@@ -7,6 +7,8 @@
     --accent: #0052cc;
     --accent-dark: #0045ac;
     --background: #ffffff;
+    --confirm: #33C600;
+    --error: #DF0000;
 }
 
 body {
@@ -67,4 +69,10 @@ body {
 
 .fill-background {
     background-color: var(--background);
+}
+.clr-confirm {
+    color: var(--confirm);
+}
+.clr-error {
+    color: var(--error);
 }

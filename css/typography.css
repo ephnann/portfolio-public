@@ -135,11 +135,14 @@ h5 {
     font-size: var(--master-h5-size);
     line-height: var(--master-h5-line-height);
     margin-bottom: 0;
+    font-weight: 400;
 }
 
 h6 {
     font-size: var(--master-h6-size);
     line-height: var(--master-h6-line-height);
+    font-weight: 400;
+    margin: 0;
 }
 
 /* body 1 size and line-height uses unique relative factors for heuristic adjustment of all body text. This ensures body 1 instances will always be greater than 1rem */
@@ -149,7 +152,9 @@ p,
 .body-1,
 button,
 label,
-a {
+a,
+ul,
+li {
     font-size: var(--master-body-1-size);
     line-height: var(--master-body-1-line-height);
     font-weight: 100;
