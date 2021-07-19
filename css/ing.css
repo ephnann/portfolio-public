@@ -312,7 +312,7 @@
     #caption-test {
         grid-column: 1 / span 4;
         top: 0;
-        
+        overflow-wrap: break-word;
     }
     #parallax {
         min-height: 200px;

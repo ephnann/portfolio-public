@@ -119,7 +119,7 @@ a {
     /* Desktop menu */
 @media all and (min-width: 960px) {
     .menu {
-        margin: 0 10rem;
+        margin: 0 8rem;
         flex-wrap: nowrap;
     }
     .logo {
@@ -163,13 +163,13 @@ strong {
        
     }
     .body-indent {
-        grid-column: 2 / span 3;
+        grid-column: 1 / span 3;
     }
     .body-half-w-r {
         grid-column: 1 / span 4;
     }
     .body-half-w {
-        grid-column: 2 / span 3;
+        grid-column: 1 / span 3;
     }
 
 }
