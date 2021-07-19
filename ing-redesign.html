@@ -11,6 +11,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lobster&display=swap" rel="stylesheet">    
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
 
     <!-- Style -->
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -19,17 +21,18 @@
 </head>
 <body>
     <section>
-        <nav class="nav-wrapper">
-            <p id="logo">EPHRAIM NANN</p>
-            <div>
-                <a class="nav-item" href="#">Work</a>
-                <a class="nav-item" href="#">About</a>
-                <button class="nav-item" id="resume-button" type="button" onclick="window.open('https://ephnann.github.io/resume/')">Resume</button>
-            </div>
-        </nav>
+        <nav>
+            <ul class="menu">
+              <li class="logo"><a href="/index.html"><h6>Ephraim Nann</h6></a></li>
+                <li class="item"><a href="./index.html">Work</a></li>
+                <li class="item"><a href="#">About</a></li>
+                <li class="item"><a class="button" href="https://ephnann.github.io/resume">Resume</a></li>
+                <li class="toggle"><a href="#"><span class="material-icons">menu</span></a></li>  
+            </ul>
+          </nav>
         <div>
             <h5 id="page-title">Helping young adults track and grow their savings with ING Bank</h5>
-            <p id="date">14 July 2021</p>
+            <p id="date">20 July 2021</p>
         </div>
         <img src="images/case-study-hero-1.png" alt="final redesign mockups" id="hero-img">
     </section>
@@ -128,7 +131,7 @@
         <div class="gr-12">
             <h5 class="section-head">Competitor Analysis</h5>
             <p class="body-full-w">The competitor analysis was based on survey data and interview results. The survey showed that the main competitors for ING in Australia are ANZ and Commonwealth Bank. One of the interviewees stated that he preferred UP Bank to ING because of the friendly user interface.</p>
-        <div class="card ev-2" id="card-1">
+        <div class="card ev-2" id="card-4">
             <img src="images/commbank-logo.png" alt="commbank logo" id="commbank-logo">
             <h6 id="comm-title">Commonwealth Bank</h6>
             <p class="clr-confirm"><strong>Pro's</strong></p>
@@ -145,7 +148,7 @@
                 - Uninformative statements
             </p>
         </div>
-        <div class="card ev-2" id="card-2">
+        <div class="card ev-2" id="card-5">
             <img src="images/anz-logo.png" alt="commbank logo" id="commbank-logo">
             <h6 id="comm-title">ANZ</h6>
             <p class="clr-confirm"><strong>Pro's</strong></p>
@@ -159,7 +162,7 @@
                 - Uninformative statements
             </p>
         </div>
-        <div class="card ev-2" id="card-3">
+        <div class="card ev-2" id="card-6">
             <img src="images/up-logo.png" alt="commbank logo" id="commbank-logo">
             <h6 id="comm-title">ANZ</h6>
             <p class="clr-confirm"><strong>Pro's</strong></p>
@@ -188,5 +191,28 @@
             <p class="body-2" id="wire-caption">After researching different methods of data visualisation, I started sketching out ideas for a new dashboard.</p>
         </div>
     </section>
+    <section>
+        <div class="gr-12">
+            <h5 class="section-head">User testing</h5>
+            <p class="body-full-w">I tested the prototype with 5 users who fit the demographic of the persona. The main problem users encountered was understanding the graph in the middle of the screen. They also struggled to notice the account selection pills. To fix this, I made the following changes:</p>
+            <ul class="body-indent">
+                <li>Added coaching screens for the account selection and the graph.
+                <li>Added a trend line to indicate how your savings are going.</li>
+                <li>I made the graph end on today’s date to make it clear that this is savings over time.
+            </ul>
+            <p class="body-full-w">After these iterations, <strong>all users were successfull in completing all the tasks.</strong>
+                <strong>3 out of 5 users said the new dashboard was ‘very intuitive’</strong>. 1 user said it was ‘intuitive’ and 1 user said it was ‘somewhat intuitive’.<br><br>
+            <strong>All users said the new dashboard is ‘informative’</strong> or <strong>‘very informative’.</strong></p>
+            <img src="images/user-testing.png" alt="Screen recording of user test" id="user-test">
+                <p class="body-2" id="caption-test">User test results: <br>https://docs.google.com/spreadsheets/d/1_RcEuPfd1r1xnEmGFRLJfnJNgxNRJH4t0GOCDjHDO_4/edit?usp=sharing</p>
+            </div>
+            <div id="parallax"></div>
+            <div class="gr-12">
+                <h5 class="section-head">Final thoughts</h5>
+                <p class="body-full-w">This self projected redesign helped young adults visualise and manage their savings. The main limitation of the project were time and resources. The customer interviews and usability testing were insightful - however, if this was a real job, I would test with and interview ~20 users instead of 5. The prototype was focussed on understanding the data visualisations but was limited in its capacity to create new budgets. In the future, this part of the prototype should be expanded upon.<br>
+                <br>Thankyou for reading :) </p>
+            </div>
+    </section>
+    <script src="js/main.js"></script>
 </body>
 </html>

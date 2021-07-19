@@ -1,12 +1,20 @@
-const menuBtn = document.querySelector('.menu-btn');
-let menuOpen = false;
-menuBtn.addEventListener('click', () => {
-    if(!menuOpen) {
-        menuBtn.classList.add('open');
-        menuOpen = true;
+const toggle = document.querySelector(".toggle");
+const menu = document.querySelector(".menu");
+ 
+/* Toggle mobile menu */
+function toggleMenu() {
+    if (menu.classList.contains("active")) {
+        menu.classList.remove("active");
+         
+        // adds the menu (hamburger) icon
+        toggle.querySelector("a").innerHTML = "<span class='material-icons'>menu</span>";
+    } else {
+        menu.classList.add("active");
+         
+        // adds the close (x) icon
+        toggle.querySelector("a").innerHTML = "<span class='material-icons'>close</span>";
     }
-    else {
-        menuBtn.classList.remove('open');
-        menuOpen = false;
-    }
-});
+}
+ 
+/* Event Listener */
+toggle.addEventListener("click", toggleMenu, false);
