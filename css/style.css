@@ -58,8 +58,12 @@ button {
 } */
 
 
-.logo {
+#logo {
     cursor: pointer;
+    /* display: none; */
+}
+.disactive {
+    display: none;
 }
 .margin-bottom-1 {
     margin-bottom: var(--sp-4);
@@ -104,24 +108,30 @@ a {
     display: none;
 }
 
+
 .item .button {
     color: var(--background);
     border-radius: 0.2rem;
     background-color: var(--accent);
     font-weight: 500;
-    padding: var(--sp-1);
+    padding: var(--sp-1) var(--sp-3);
     cursor: pointer;   
 }
 .active .item {
     display: block;
 }
-
+.space-btw {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 8%;
+}
+ul.menu.active {
+    padding: 0;
+}
     /* Desktop menu */
 @media all and (min-width: 960px) {
-    .menu {
-        margin: 0 8rem;
-        flex-wrap: nowrap;
-    }
+
     .logo {
         order: 0;
     }
